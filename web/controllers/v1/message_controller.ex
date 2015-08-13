@@ -1,4 +1,4 @@
-defmodule RestApi.MessageController do
+defmodule RestApi.V1.MessageController do
   use RestApi.Web, :controller
 
   alias RestApi.Message

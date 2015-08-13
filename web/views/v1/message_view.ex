@@ -1,4 +1,4 @@
-defmodule RestApi.MessageView do
+defmodule RestApi.V1.MessageView do
   use RestApi.Web, :view
 
   def render("index.json", %{messages: messages}) do

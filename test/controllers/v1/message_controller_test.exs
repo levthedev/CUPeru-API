@@ -1,4 +1,4 @@
-defmodule RestApi.MessageControllerTest do
+defmodule RestApi.V1.MessageControllerTest do
   use RestApi.ConnCase
 
   alias RestApi.Message
