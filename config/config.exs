@@ -12,7 +12,12 @@ config :rest_api, RestApi.Endpoint,
   secret_key_base: "tIGT0c5a7eg6VkhSdfxymWHBm9UyfHDEJeSDZy6em5rv8q/urWFNIhq8g6/KM0w+",
   render_errors: [default_format: "html"],
   pubsub: [name: RestApi.PubSub,
-           adapter: Phoenix.PubSub.PG2]
+           adapter: Phoenix.PubSub.PG2],
+  database: "rest-api",
+  username: "lev",
+  password: "password",
+  hostname: "localhost",
+  port: 5432
 
 # Configures Elixir's Logger
 config :logger, :console,
@@ -22,3 +27,4 @@ config :logger, :console,
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env}.exs"
+
