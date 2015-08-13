@@ -10,6 +10,6 @@ defmodule RestApi.V1.MessageView do
   end
 
   def render("message.json", %{message: message}) do
-    %{id: message.id}
+    %{id: message.id, from: message.from, to: message.to, body: message.body}
   end
 end
